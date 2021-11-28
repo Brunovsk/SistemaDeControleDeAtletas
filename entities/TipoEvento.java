@@ -1,0 +1,14 @@
+package entities;
+
+public enum TipoEvento {
+	
+	DEFESA,
+	GOL_A_FAVOR,
+	ROUBADA_DE_BOLA,
+	ASSISTENCIA,
+	FINALIZACAO,
+	FALTA_COMETIDA,
+	CARTAO_AMARELO,
+	CARTAO_VERMELHO;
+
+}
