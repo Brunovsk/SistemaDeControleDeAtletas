@@ -9,7 +9,7 @@ public abstract class Atleta {
 	private Date dataAdmissaoClube;
 	private Integer numCartoesAmarelos;
 	private Integer numCartaoVermelhos;
-	private Integer faltasCometidas;
+    protected Integer faltasCometidas;
 	
 	public Atleta() {
 		this.numeroCamisa = null;

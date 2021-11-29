@@ -7,7 +7,7 @@ public interface GerenciadorDePartida {
 	
 	public Partida iniciaPartida(Date dataPartida, String nomeAdversario,List <Atleta> atletasescalados);
 	
-	public EventoPartida registrarEvento(Partida partida,TipoEvento tipoEvento, Atleta atletaEnvolvido);
+	public EventoPartida registrarEvento(Partida partida,TipoEvento tipoEvento, Integer numeroCamisa);
 	
 	public void imprimirEstatisticas();
 

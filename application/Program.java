@@ -6,22 +6,25 @@ import java.util.ArrayList;
 
 import entities.Atacante;
 import entities.Defensor;
+import entities.EventoPartida;
 import entities.GerenciadorDePartidaImplementacao;
 import entities.Goleiro;
 import entities.MeioCampista;
 import entities.Partida;
+import entities.TipoEvento;
 
 public class Program {
 
 	public static void main(String[] args) throws ParseException {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
+		
 		GerenciadorDePartidaImplementacao jogo = new GerenciadorDePartidaImplementacao();
 		Partida partida1 = jogo.iniciaPartida(sdf.parse("23/10/2021"),"Vasco", new ArrayList<>());
 		
 		Goleiro goleiro = new Goleiro();
 		
-		goleiro.setNumeroCamisa(2);
+		goleiro.setNumeroCamisa(1);
 		goleiro.setNome("Bruno");
 		goleiro.setSalarioMensal(5000.00);
 		goleiro.setDataAdmissaoClube(sdf.parse("23/05/1996"));
@@ -173,8 +176,10 @@ public class Program {
 		atacante1.setGols(3);
 		atacante1.setFinalizacoes(15);
 		
+		EventoPartida evento1 = jogo.registrarEvento(partida1, TipoEvento.FALTA_COMETIDA, 99);	
+		partida1.getEventos().add(evento1);
 		
-		
+		System.out.println(meioCampista4.toString());
 	
 		
 

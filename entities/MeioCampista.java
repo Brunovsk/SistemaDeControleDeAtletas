@@ -43,6 +43,13 @@ public class MeioCampista extends Atleta{
 	public void setPassesErrados(Integer passesErrados) {
 		this.passesErrados = passesErrados;
 	}
+
+	@Override
+	public String toString() {
+		return "MeioCampista [assitencias=" + assitencias +
+				", FaltasCometidas ="+ faltasCometidas+", passes=" + passes + ", passesErrados=" + passesErrados
+				+ "]";
+	}
 	
 	
 
