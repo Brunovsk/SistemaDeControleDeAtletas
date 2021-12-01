@@ -24,6 +24,11 @@ public class Goleiro extends Defensor{
 	public void setDefesas(Integer defesas) {
 		this.defesas = defesas;
 	}
+
+	@Override
+	public String toString() {
+		return "Goleiro [defesas=" + defesas + "]";
+	}
 	
 	
 	

@@ -12,7 +12,7 @@ public abstract class Atleta {
     protected Integer faltasCometidas;
 	
 	public Atleta() {
-		this.numeroCamisa = null;
+		
 	}
 	
 	public Atleta(Integer numeroCamisa, String nome, Double salarioMensal, Date dataAdmissaoClube,
@@ -30,7 +30,7 @@ public abstract class Atleta {
 		return numeroCamisa;
 	}
 
-	public final void setNumeroCamisa(Integer numeroCamisa) {
+	public  void setNumeroCamisa(Integer numeroCamisa) {
 		this.numeroCamisa = numeroCamisa;
 	}
 
@@ -80,6 +80,13 @@ public abstract class Atleta {
 
 	public void setFaltasCometidas(Integer faltasCometidas) {
 		this.faltasCometidas = faltasCometidas;
+	}
+
+	@Override
+	public String toString() {
+		return "Atleta [numeroCamisa=" + numeroCamisa + ", nome=" + nome + ", salarioMensal=" + salarioMensal
+				+ ", dataAdmissaoClube=" + dataAdmissaoClube + ", numCartoesAmarelos=" + numCartoesAmarelos
+				+ ", numCartaoVermelhos=" + numCartaoVermelhos + ", faltasCometidas=" + faltasCometidas + "]";
 	}
 	
 	

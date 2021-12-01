@@ -34,6 +34,11 @@ public class Defensor extends Atleta {
 	public void setRoubadasDeBola(Integer roubadasDeBola) {
 		this.roubadasDeBola = roubadasDeBola;
 	}
+
+	@Override
+	public String toString() {
+		return "Defensor [PartidasSemSofrerGol=" + PartidasSemSofrerGol + ", roubadasDeBola=" + roubadasDeBola + "]";
+	}
 	
 	
 	

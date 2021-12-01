@@ -34,6 +34,11 @@ public class Atacante extends MeioCampista{
 	public void setFinalizacoes(Integer finalizacoes) {
 		this.finalizacoes = finalizacoes;
 	}
+
+	@Override
+	public String toString() {
+		return "Atacante [gols=" + gols + ", finalizacoes=" + finalizacoes + "]";
+	}
 	
 	
 	
